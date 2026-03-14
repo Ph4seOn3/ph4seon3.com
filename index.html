@@ -28,7 +28,6 @@
     <a href="#hero" class="nav-logo">ph4seon3<span class="cursor-inline">_</span></a>
     <div class="navbar-links">
       <a href="#clients">clients</a>
-      <a href="#youtube">youtube</a>
       <a href="#contact">contact</a>
     </div>
   </nav>
@@ -107,27 +106,6 @@
       </div>
     </section>
 
-    <!-- ═══ YOUTUBE ═══ -->
-    <section id="youtube">
-      <h2 class="section-label comment">youtube</h2>
-
-      <!-- Featured video — populated dynamically -->
-      <div class="yt-featured-wrap">
-        <div class="yt-featured" id="yt-featured">
-          <div class="yt-loading">loading latest videos<span class="yt-dots"></span></div>
-        </div>
-      </div>
-
-      <!-- Thumbnail cards — populated dynamically -->
-      <div class="cards-grid yt-grid" id="yt-grid"></div>
-
-      <div class="yt-channel-cta">
-        <a href="https://www.youtube.com/@GratuityMedia" target="_blank" rel="noopener" class="btn btn-primary">
-          → @GratuityMedia on YouTube
-        </a>
-      </div>
-    </section>
-
     <!-- ═══ CONTACT ═══ -->
     <section id="contact">
       <h2 class="section-label comment">contact</h2>
@@ -161,20 +139,6 @@
   <footer>
     <p>jeffy k. &nbsp;/&nbsp; ph4seon3 &nbsp;/&nbsp; <span class="footer-year">2026</span></p>
   </footer>
-
-  <!-- YouTube lightbox modal -->
-  <div class="yt-modal" id="yt-modal" role="dialog" aria-modal="true" aria-label="Video player">
-    <div class="yt-modal-backdrop" id="yt-modal-backdrop"></div>
-    <div class="yt-modal-content">
-      <button class="yt-modal-close" id="yt-modal-close" aria-label="Close video">✕</button>
-      <div class="yt-modal-iframe-wrap">
-        <iframe id="yt-modal-iframe" frameborder="0"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
