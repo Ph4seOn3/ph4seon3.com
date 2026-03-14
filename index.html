@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ph4seon3 — video editor for devs</title>
+  <meta name="description" content="Jeffy K. — cutting frames for people who ship code." />
+  <meta name="theme-color" content="#1d2021" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ph4seon3 — video editor for devs" />
+  <meta property="og:description" content="cutting frames for people who ship code." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ph4seon3.com" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CRT overlay -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <nav class="navbar">
+    <a href="#hero" class="nav-logo">ph4seon3<span class="cursor-inline">_</span></a>
+    <div class="navbar-links">
+      <a href="#clients">clients</a>
+      <a href="#youtube">youtube</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section id="hero">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">~/ph4seon3/index.sh</span>
+        </div>
+        <div class="terminal-body">
+          <div id="typewriter-output"></div>
+          <div class="terminal-cursor" id="term-cursor" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#clients" class="btn btn-primary">see my work</a>
+        <a href="https://www.youtube.com/@GratuityMedia" target="_blank" rel="noopener" class="btn btn-secondary">▶ watch on youtube</a>
+      </div>
+    </section>
+
+    <!-- ═══ CLIENTS ═══ -->
+    <section id="clients">
+      <h2 class="section-label comment">clients</h2>
+      <div class="cards-grid">
+
+        <article class="project-card" style="--accent-color: var(--yellow)">
+          <div class="card-header">
+            <span class="card-tag">full-stack / t3 stack</span>
+          </div>
+          <h3 class="card-title">@t3dotgg</h3>
+          <p class="card-desc">Editing for Theo — one of the most opinionated devs on the internet. High energy, high output.</p>
+          <div class="card-links">
+            <a href="https://x.com/theo" target="_blank" rel="noopener">x.com/theo →</a>
+          </div>
+        </article>
+
+        <article class="project-card" style="--accent-color: var(--orange)">
+          <div class="card-header">
+            <span class="card-tag">systems / low-level</span>
+          </div>
+          <h3 class="card-title">@LowLevelTV</h3>
+          <p class="card-desc">Complex systems content made digestible. Every frame earns its place when the topic is this dense.</p>
+          <div class="card-links">
+            <a href="https://x.com/lowleveltweets" target="_blank" rel="noopener">x.com/lowleveltweets →</a>
+          </div>
+        </article>
+
+        <article class="project-card" style="--accent-color: var(--aqua)">
+          <div class="card-header">
+            <span class="card-tag">full-stack / web dev</span>
+          </div>
+          <h3 class="card-title">@bmdavis419</h3>
+          <p class="card-desc">The latest in code and AI — no filler, just signal.</p>
+          <div class="card-links">
+            <a href="https://x.com/davis7" target="_blank" rel="noopener">x.com/davis7 →</a>
+          </div>
+        </article>
+
+        <article class="project-card" style="--accent-color: var(--purple)">
+          <div class="card-header">
+            <span class="card-tag">react / design systems</span>
+          </div>
+          <h3 class="card-title">@chantastic</h3>
+          <p class="card-desc">Editing for one of the most recognizable voices in the React community. Clean cuts, sharp pacing.</p>
+          <div class="card-links">
+            <a href="https://x.com/chantastic" target="_blank" rel="noopener">x.com/chantastic →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══ YOUTUBE ═══ -->
+    <section id="youtube">
+      <h2 class="section-label comment">youtube</h2>
+
+      <!-- Featured video — populated dynamically -->
+      <div class="yt-featured-wrap">
+        <div class="yt-featured" id="yt-featured">
+          <div class="yt-loading">loading latest videos<span class="yt-dots"></span></div>
+        </div>
+      </div>
+
+      <!-- Thumbnail cards — populated dynamically -->
+      <div class="cards-grid yt-grid" id="yt-grid"></div>
+
+      <div class="yt-channel-cta">
+        <a href="https://www.youtube.com/@GratuityMedia" target="_blank" rel="noopener" class="btn btn-primary">
+          → @GratuityMedia on YouTube
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact">
+      <h2 class="section-label comment">contact</h2>
+      <div class="contact-block">
+        <p class="prompt">$ cat contact.txt</p>
+        <div class="contact-list">
+          <a href="https://x.com/ph4seon3" target="_blank" rel="noopener" class="contact-row">
+            <span class="contact-key">twitter/x</span>
+            <span class="contact-arrow">→</span>
+            <span class="contact-val">@ph4seon3</span>
+          </a>
+          <a href="mailto:Ph4seon3@protonmail.com" class="contact-row">
+            <span class="contact-key">email&nbsp;&nbsp;&nbsp;</span>
+            <span class="contact-arrow">→</span>
+            <span class="contact-val">Ph4seon3@protonmail.com</span>
+          </a>
+          <a href="https://www.youtube.com/@GratuityMedia" target="_blank" rel="noopener" class="contact-row">
+            <span class="contact-key">youtube&nbsp;</span>
+            <span class="contact-arrow">→</span>
+            <span class="contact-val">youtube.com/@GratuityMedia</span>
+          </a>
+        </div>
+        <p class="availability">
+          <span class="avail-dot">●</span> open to new clients
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>jeffy k. &nbsp;/&nbsp; ph4seon3 &nbsp;/&nbsp; <span class="footer-year">2026</span></p>
+  </footer>
+
+  <!-- YouTube lightbox modal -->
+  <div class="yt-modal" id="yt-modal" role="dialog" aria-modal="true" aria-label="Video player">
+    <div class="yt-modal-backdrop" id="yt-modal-backdrop"></div>
+    <div class="yt-modal-content">
+      <button class="yt-modal-close" id="yt-modal-close" aria-label="Close video">✕</button>
+      <div class="yt-modal-iframe-wrap">
+        <iframe id="yt-modal-iframe" frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
