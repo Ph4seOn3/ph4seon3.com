@@ -10,7 +10,8 @@ const lines = [
   { text: '$ cat about.txt',                       cls: 'cmd', pause: 400 },
   { text: 'cutting frames for people who ship code.', cls: 'out', pause: 300 },
   { text: 'clients: @t3dotgg @LowLevelTV',          cls: 'dim', pause: 120 },
-  { text: '         @bmdavis419 @chantastic',       cls: 'dim', pause: 300 },
+  { text: '         @bmdavis419 @chantastic',       cls: 'dim', pause: 120 },
+  { text: '         @workos @coderabbitai',         cls: 'dim', pause: 300 },
   { text: '         and more...',                   cls: 'dim', pause: 600 },
   { text: '$ _',                                   cls: 'cmd', pause: 0, done: true },
 ];
@@ -91,3 +92,10 @@ if (sections.length && navLinks.length) {
   sections.forEach(s => observer.observe(s));
 }
 
+// ─── 3. FOOTER YEAR ───────────────────────────────────────────────────────────
+
+const footerYear = document.querySelector('.footer-year');
+
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
+}
