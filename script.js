@@ -9,10 +9,6 @@ const lines = [
   { text: 'ph4seon3  //  jeffy k.',                cls: 'hi',  pause: 700 },
   { text: '$ cat about.txt',                       cls: 'cmd', pause: 400 },
   { text: 'high-signal edits for the dev internet.', cls: 'out', pause: 300 },
-  { text: 'clients: @t3dotgg @LowLevelTV',          cls: 'dim', pause: 120 },
-  { text: '         @bmdavis419 @chantastic',       cls: 'dim', pause: 120 },
-  { text: '         @workos @coderabbitai',         cls: 'dim', pause: 300 },
-  { text: '         and more...',                   cls: 'dim', pause: 600 },
   { text: '$ _',                                   cls: 'cmd', pause: 0, done: true },
 ];
 
