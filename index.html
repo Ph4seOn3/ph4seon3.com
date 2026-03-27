@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ph4seon3 — video editor for devs</title>
-  <meta name="description" content="Jeffy K. — cutting frames for people who ship code." />
+  <title>ph4seon3 — video production & consulting</title>
+  <meta name="description" content="Jeffy K. — video production and consulting for the dev internet." />
   <meta name="theme-color" content="#1d2021" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="ph4seon3 — video editor for devs" />
-  <meta property="og:description" content="cutting frames for people who ship code." />
+  <meta property="og:title" content="ph4seon3 — video production & consulting" />
+  <meta property="og:description" content="video production and consulting for the dev internet." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ph4seon3.com" />
 
@@ -26,23 +26,17 @@
   <!-- Nav -->
   <nav class="navbar">
     <a href="#hero" class="nav-logo">ph4seon3<span class="cursor-inline">_</span></a>
-    <div class="navbar-links">
-      <a href="#clients">clients</a>
-      <a href="#contact">contact</a>
-    </div>
   </nav>
 
   <main>
 
     <!-- ═══ HERO ═══ -->
     <section id="hero">
-      <div class="hero-copy">
-        <p class="hero-kicker">video editor for devs</p>
-        <h1 class="hero-title">Cutting videos for people who ship code.</h1>
-        <p class="hero-subhead">For creators, software teams, and technical brands making content people actually want to watch.</p>
-        <p class="hero-proof">Trusted by @t3dotgg, @LowLevelTV, @chantastic, WorkOS, and CodeRabbit.</p>
+      <div class="hero-copy" data-reveal data-delay="0">
+        <h1 class="hero-title">Video production for devs.</h1>
+        <p class="hero-proof">Trusted by t3dotgg, LowLevelTV, Chantastic, WorkOS, and CodeRabbit.</p>
       </div>
-      <div class="terminal-window">
+      <div class="terminal-window" data-reveal data-delay="150">
         <div class="terminal-bar">
           <span class="dot dot-red"></span>
           <span class="dot dot-yellow"></span>
@@ -54,18 +48,18 @@
           <div class="terminal-cursor" id="term-cursor" aria-hidden="true"></div>
         </div>
       </div>
-      <div class="hero-ctas">
+      <div class="hero-ctas" data-reveal data-delay="300">
         <a href="https://www.youtube.com/@GratuityMedia" target="_blank" rel="noopener" class="btn btn-primary">watch edits</a>
-        <a href="#clients" class="btn btn-secondary">selected clients</a>
       </div>
+      <a href="#clients" class="scroll-hint" aria-label="Scroll down" data-reveal data-delay="450">↓</a>
     </section>
 
     <!-- ═══ CLIENTS ═══ -->
     <section id="clients">
-      <h2 class="section-label comment">selected clients</h2>
+      <h2 class="section-label comment" data-reveal data-delay="0">selected clients</h2>
       <div class="cards-grid">
 
-        <article class="project-card" style="--accent-color: var(--yellow)">
+        <article class="project-card" data-reveal data-delay="0" style="--accent-color: var(--yellow)">
           <div class="card-header">
             <span class="card-tag">dev media / startups</span>
           </div>
@@ -76,7 +70,7 @@
           </div>
         </article>
 
-        <article class="project-card" style="--accent-color: var(--green)">
+        <article class="project-card" data-reveal data-delay="80" style="--accent-color: var(--green)">
           <div class="card-header">
             <span class="card-tag">systems / low-level</span>
           </div>
@@ -87,7 +81,7 @@
           </div>
         </article>
 
-        <article class="project-card" style="--accent-color: var(--aqua)">
+        <article class="project-card" data-reveal data-delay="160" style="--accent-color: var(--aqua)">
           <div class="card-header">
             <span class="card-tag">web dev / ai</span>
           </div>
@@ -98,7 +92,7 @@
           </div>
         </article>
 
-        <article class="project-card" style="--accent-color: var(--purple)">
+        <article class="project-card" data-reveal data-delay="240" style="--accent-color: var(--purple)">
           <div class="card-header">
             <span class="card-tag">react / frontend</span>
           </div>
@@ -109,7 +103,7 @@
           </div>
         </article>
 
-        <article class="project-card" style="--accent-color: var(--blue)">
+        <article class="project-card" data-reveal data-delay="320" style="--accent-color: var(--blue)">
           <div class="card-header">
             <span class="card-tag">auth / infra</span>
           </div>
@@ -120,7 +114,7 @@
           </div>
         </article>
 
-        <article class="project-card" style="--accent-color: var(--orange)">
+        <article class="project-card" data-reveal data-delay="400" style="--accent-color: var(--orange)">
           <div class="card-header">
             <span class="card-tag">ai / code review</span>
           </div>
@@ -131,6 +125,74 @@
           </div>
         </article>
 
+      </div>
+    </section>
+
+    <!-- ═══ STATS ═══ -->
+    <section id="stats">
+      <h2 class="section-label comment" data-reveal data-delay="0">numbers</h2>
+
+      <div class="stats-headline">
+        <div class="stat-big" data-reveal data-delay="100">
+          <span class="stat-number" data-final="~93.4M">~0M</span>
+          <span class="stat-label">total views</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true" data-reveal data-delay="200">/</div>
+        <div class="stat-big" data-reveal data-delay="200">
+          <span class="stat-number stat-green" data-final="930">0</span>
+          <span class="stat-label">videos edited</span>
+        </div>
+      </div>
+
+      <div class="stats-block" data-reveal data-delay="300">
+        <p class="prompt">$ cat stats.txt</p>
+        <div class="stats-table">
+          <div class="stats-row stats-header">
+            <span class="stats-name">playlist</span>
+            <span class="stats-vids">videos</span>
+            <span class="stats-views">views</span>
+          </div>
+          <div class="stats-row">
+            <span class="stats-name">theo edits</span>
+            <span class="stats-vids">788</span>
+            <span class="stats-views">~74.4M</span>
+          </div>
+          <div class="stats-row">
+            <span class="stats-name">low level edits</span>
+            <span class="stats-vids">52</span>
+            <span class="stats-views">~17.8M</span>
+          </div>
+          <div class="stats-row">
+            <span class="stats-name">john hammond edits</span>
+            <span class="stats-vids">5</span>
+            <span class="stats-views">~362K</span>
+          </div>
+          <div class="stats-row">
+            <span class="stats-name">codeTV edits (learn with jason)</span>
+            <span class="stats-vids">29</span>
+            <span class="stats-views">~322K</span>
+          </div>
+          <div class="stats-row">
+            <span class="stats-name">frontend FYI edits</span>
+            <span class="stats-vids">20</span>
+            <span class="stats-views">~249K</span>
+          </div>
+          <div class="stats-row">
+            <span class="stats-name">other edits</span>
+            <span class="stats-vids">24</span>
+            <span class="stats-views">~183K</span>
+          </div>
+          <div class="stats-row">
+            <span class="stats-name">ben davis</span>
+            <span class="stats-vids">5</span>
+            <span class="stats-views">~77K</span>
+          </div>
+          <div class="stats-row">
+            <span class="stats-name">Chantastic</span>
+            <span class="stats-vids">7</span>
+            <span class="stats-views">~8K</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -156,9 +218,6 @@
             <span class="contact-val">youtube.com/@GratuityMedia</span>
           </a>
         </div>
-        <p class="availability">
-          <span class="avail-dot">●</span> open to new clients
-        </p>
       </div>
     </section>
 
